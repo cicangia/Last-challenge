@@ -5,9 +5,6 @@
     <title>Pour me another</title>
     <meta charset="utf-8">
 
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
     <!-- Bootstrap import -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
@@ -21,21 +18,11 @@
 
 <body>
 
-<<<<<<< HEAD
-<div>
- <h1> ferst section </h1>
-</div>
-
-
-  <!-- Beer information -->
-<div> </div>
-=======
         <!-- Navigation -->
-
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark background-color">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav navbar-center">
                     <li class="nav-item active">
@@ -60,20 +47,21 @@
                 </ul>
             </div>
         </nav>
+
 <!-- The introduction section -->
         <div class="main-img">
             <div class="over-layer">
                 <h1>Have a Beer</h1>
-                <a href="#"><img class="arrow" src="img/arrow.png" alt=""></a>
+                <a href="#"><img class="arrow" src="img/arrow.png" alt="downward arrow"></a>
             </div>
         </div>
 
 
 
 <!-- Beer information -->
-   
+
     <section class="random-beer-sec"></section>
-    
+
 
 <!-- General beer information (WIKI) -->
     <section class="row">
@@ -84,41 +72,40 @@
             <img src="img/hops-barley.jpg" alt="">
         </div>
     </section>
-    
+
 <!-- Parallax img -->
-       
+
         <div class="scnd-par-img">
             <div class="over-layer">
             </div>
-        </div>    
->>>>>>> 98fe00720fecca99f37b718fd75889f1eebe175f
+        </div>
 
 <!-- Joke / random fact generator -->
-        <div>
-            <h2>Random beer facts generator</h2>
-            <div>
-                <button class="btn btn-primary">Bring it on!</button>
+        <div class="container">
+            <h2>Random beer joke generator</h2>
+            <blockquote class="text-center my-5"> <!--Still have to make this blockquote put quotation marks around text-->
+              <p id="fact">Steven Petrosino of New Cumberland, Pennsylvania downed 1 liter of beer or 33 ounces in a chilly 1.3 seconds in 1977 which made him a World Beer Chugging Champion according to the Guinness Book of World Records. </p>
+            </blockquote>
+            <div class="text-center">
+                <button id="getFact" class="btn btn-primary">Bring me another!</button>
             </div>
         </div>
 
-    
+
 
 <!-- Team -->
-   
-    <div>
-        <h2>Team</h2>
-    </div>
-
-<!-- Footer -->
     <footer>
-
+      <div>
+          <h2 class="py-5">Team</h2>
+      </div>
     </footer>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    
+
 
 </body>
 
