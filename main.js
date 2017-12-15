@@ -17,3 +17,20 @@ $(document).ready(function() {
                 }
             });
  });
+
+ $(document).ready(function() {
+
+   $.getJSON("facts.json", function(json){
+
+      $("#fact").html(JSON.stringify(json.facts[0])) //Start with the same fact this way
+    });
+
+  $("#getFact").on("click", function() {
+    $.getJSON("facts.json", function(json){
+
+      var j = Math.floor(Math.random() * 10) - 1; // * 10 is number of jokes in the array, -1 is for the first item array (0)
+
+      $("#fact").html(JSON.stringify(json.facts[j])) //number in array needs to be randomized
+    });
+  });
+});
