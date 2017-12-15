@@ -19,96 +19,102 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#mynav">
 
-        <!-- Navigation -->
+    <!-- Navigation -->
 
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark background-color">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar sticky-top navbar-expand-lg  background-color">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav navbar-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item sep">|</li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">random beer</a>
-                    </li>
-                    <li class="nav-item sep">|</li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">about</a>
-                    </li>
-                    <li class="nav-item sep">|</li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">fun facts</a>
-                    </li>
-                    <li class="nav-item sep">|</li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">team</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-<!-- The introduction section -->
-        <div class="main-img">
-            <div class="over-layer">
-                <h1>Have a Beer</h1>
-                <a href="#"><img class="arrow" src="img/arrow.png" alt=""></a>
-            </div>
+        <div id="navbarNav mynav" class="collapse navbar-collapse" >
+            <ul class="navbar-nav navbar-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">home </a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#random-panel">random beer</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-panel">about</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#facts-panel">fun facts</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#team-panel">team</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#contacts-panel">contacts</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <!-- The introduction section -->
+    <div id="home" class="main-img">
+        <div class="over-layer">
+            <h1>Have a Beer</h1>
+            <a href="#random-panel"><img class="arrow" src="img/arrow.png" alt=""></a>
+        </div>
+    </div>
 
 
 
-<!-- Beer information -->
-   
-    <section class="random-beer-sec"></section>
-    
+    <!-- Beer information -->
+    <span id="random-panel" class="anchor"></span>
+    <section id="random" class="random-beer-sec"></section>
 
-<!-- General beer information (WIKI) -->
-    <section class="row">
+
+    <!-- General beer information (WIKI) -->
+    <span id="about-panel" class="anchor"></span>
+    <section id="about" class="row">
         <div class="col-sm-6 box">
             <h3>About our Beers</h3>
+
         </div>
         <div class="col-sm-6">
             <img src="img/hops-barley.jpg" alt="">
         </div>
     </section>
-    
-<!-- Parallax img -->
-       
-        <div class="scnd-par-img">
-            <div class="over-layer">
-            </div>
-        </div>    
 
-<!-- Joke / random fact generator -->
-        <div>
-            <h2>Random beer facts generator</h2>
-            <div>
-                <button class="btn btn-primary">Bring it on!</button>
-            </div>
+    <!-- Parallax img -->
+
+    <div class="scnd-par-img">
+        <div class="over-layer">
         </div>
+    </div>
 
-    
+    <!-- Joke / random fact generator -->
+    <span id="facts-panel" class="anchor"></span>
+    <div id="facts">
+        <h2>Random beer facts generator</h2>
+        <div>
+            <button class="btn btn-primary">Bring it on!</button>
+        </div>
+    </div>
 
-<!-- Team -->
-   
-    <div>
+    <!-- Team -->
+    <span id="team-panel" class="anchor"></span>
+    <div id="team">
         <h2>Team</h2>
     </div>
 
-<!-- Footer -->
-    <footer>
+    <!-- Footer -->
+    <span id="contacts-panel" class="anchor"></span>
+    <footer id="contacts">
 
     </footer>
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    
+
 
 </body>
 

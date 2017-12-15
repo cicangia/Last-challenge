@@ -5,6 +5,7 @@ body{
     background-color:#000000;
     margin: 0px;
     padding: 0px;
+    position: relative;
 
 }
 
@@ -46,7 +47,14 @@ div{
     line-height: 130px;
 }
 
-/*nav*/
+.anchor {
+    display: block;
+    height: 50px;
+    margin-top: -50px;
+    visibility: hidden;
+}
+
+/* NAVIGATION */
 .navbar{
     background-color: transparent;
     width: 100%;
@@ -63,9 +71,14 @@ ul li{
     left: 50%;
     transform: translatex(-50%);
 }
-nav-link{
-    color: #fff !important;
+ul li a{
+    color: rgba(255,255,255,0.6);
 }
+
+ul li a:hover,ul li a:active,ul li a:focus{
+    color: rgba(255,255,255,1);
+}
+
 .sep{
     margin: 8px 8px 0 8px;
 }
