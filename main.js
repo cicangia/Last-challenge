@@ -9,7 +9,6 @@ $(document).ready(function () {
                 "background-color": "rgba(0,0,0,0.8)",
                 "height": "60px"
             });
-<<<<<<< HEAD
         } else {
             $(".background-color").css({
                 "background-color": "transparent",
@@ -17,21 +16,22 @@ $(document).ready(function () {
             });
         }
     });
+    
+    
 
-    $('body').scrollspy({
-        target: '#mynav'
-    });
-
-//    $(document).on('click', 'a[href^="#"]', function (event) {
-//        event.preventDefault();
-//
-//        $('html, body').animate({
-//            scrollTop: $($.attr(this, 'href')).offset().top
-//        }, 1000);
+//    $('body').scrollspy({
+//        target: '#mynav'
 //    });
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 800);
+    });
+    
 });
-=======
- });
 
  $(document).ready(function() {
 
@@ -49,4 +49,3 @@ $(document).ready(function () {
     });
   });
 });
->>>>>>> 32f981eba7cf74af32e7013dd9e9de907b73c60a
