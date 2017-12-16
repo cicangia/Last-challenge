@@ -1,6 +1,6 @@
-var typed = new Typed('#typed', {
-  stringsElement: '#typed-strings'
-});
+// var typed = new Typed('#typed', {
+//   stringsElement: '#typed-strings'
+// });
 
 $(document).ready(function () {
 
