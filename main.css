@@ -109,7 +109,7 @@ ul li a:hover,ul li a:active,ul li a:focus{
 
 /* RANDOM BEER SECTION */
 .random-beer-sec{
-    background-color: #fff;
+    background-color: black;
     min-height: 600px;
 }
 
@@ -147,4 +147,33 @@ footer{
   display: inline-block;
   width: 150px;
   margin: 35px;
+}
+.beer_info{
+  display: inline-block;
+  max-width: 400px;
+  vertical-align: top;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+#new_beer{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#photo{
+  height: 50px;
+  width: auto;
+}
+#pohto_div{
+  background-color: #212121;
+}
+#beer_color{
+  border-color: #fff;
+  border-width: 2px;
+}
+.beer_text{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-align: center;
 }
