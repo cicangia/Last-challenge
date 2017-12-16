@@ -87,7 +87,7 @@ $(document).ready(function(){
 });
 // reload beer
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#new_beer").on( "click", function() {
         location.reload(true);
     });
 });
