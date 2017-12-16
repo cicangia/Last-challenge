@@ -115,7 +115,6 @@ ul li a:hover,ul li a:active,ul li a:focus{
 
 /* RANDOM BEER SECTION */
 .random-beer-sec{
-<<<<<<< HEAD
     background-color: #fff;
     height: 400px;
     text-align: left;
@@ -148,10 +147,6 @@ ul li a:hover,ul li a:active,ul li a:focus{
     font-weight: 700;
     height: 60px;
     width: 200px;
-=======
-    background-color: black;
-    min-height: 600px;
->>>>>>> 01999ef4279bd8a601542ae5ccea3f26c2610f3c
 }
 
 /* ABOUT */
@@ -183,7 +178,6 @@ ul li a:hover,ul li a:active,ul li a:focus{
   width: 150px;
   margin: 35px;
 }
-<<<<<<< HEAD
 /* FOOTER */
 
 footer{
@@ -192,34 +186,3 @@ footer{
     width: 100%;
 }
 
-=======
-.beer_info{
-  display: inline-block;
-  max-width: 400px;
-  vertical-align: top;
-  margin-right: 80px;
-  margin-left: 80px;
-  margin-top: 20px;
-}
-#new_beer{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-#photo{
-  height: 50px;
-  width: auto;
-}
-#pohto_div{
-  background-color: #212121;
-}
-#beer_color{
-  border-color: #fff;
-  border-width: 2px;
-}
-.beer_text{
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  text-align: center;
-}
->>>>>>> 01999ef4279bd8a601542ae5ccea3f26c2610f3c
