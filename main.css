@@ -89,6 +89,10 @@ ul li a:hover,ul li a:active,ul li a:focus{
     margin: 8px 8px 0 8px;
 }
 
+.navbar>.active>a{
+    color: #fff;
+}
+
 /* INTRO SECTION */
 .main-img {
     background: url(img/main-img.jpg) no-repeat 50% 0 fixed;
@@ -154,7 +158,14 @@ ul li a:hover,ul li a:active,ul li a:focus{
 /* ABOUT */
 
 .box{
-    padding: 20px;
+    padding: 50px 80px;
+}
+.box h3{
+    text-align: left;
+    margin-bottom: 30px;
+}
+.about-text{
+    font-size: 20px;
 }
 
 /* SECOND PARALLAX IMAGE */
