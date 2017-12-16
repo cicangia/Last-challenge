@@ -1,3 +1,7 @@
+var typed = new Typed('#typed', {
+  stringsElement: '#typed-strings'
+});
+
 $(document).ready(function () {
 
     var scroll = 0;
