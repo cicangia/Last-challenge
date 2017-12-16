@@ -116,8 +116,9 @@ ul li a:hover,ul li a:active,ul li a:focus{
 /* RANDOM BEER SECTION */
 .random-beer-sec{
     background-color: #fff;
-    height: 400px;
+    min-height: 400px;
     text-align: left;
+    padding-bottom: 60px;
 
 }
 
@@ -148,6 +149,7 @@ ul li a:hover,ul li a:active,ul li a:focus{
     height: 60px;
     width: 200px;
 }
+
 
 /* ABOUT */
 
