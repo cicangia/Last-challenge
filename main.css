@@ -138,3 +138,13 @@ footer{
     height: 100px;
     width: 100%;
 }
+
+.imagecontainer{
+  text-align: center;
+}
+
+#teampics{
+  display: inline-block;
+  width: 150px;
+  margin: 35px;
+}
