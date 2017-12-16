@@ -31,7 +31,7 @@
                 </li>
                 <li class="nav-item sep">|</li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#random">random beer</a>
+                    <a class="nav-link" href="#random-panel">random beer</a>
                 </li>
                 <li class="nav-item sep">|</li>
                 <li class="nav-item">
@@ -54,18 +54,53 @@
     </nav>
     <!-- The introduction section -->
     <div id="home" class="main-img">
-        <div class="over-layer">
+        <div class="over-layer" id="typed-strings">
             <h1>Have a Beer</h1>
-            <a href="#random-panel"><img class="arrow" src="img/arrow.png" alt=""></a>
         </div>
+        <span id="typed"></span>
+        <a href="#random-panel"><img class="arrow" src="img/arrow.png" alt=""></a>
     </div>
 
 
 
     <!-- Beer information -->
     <span id="random-panel" class="anchor"></span>
-    <section id="random" class="random-beer-sec"></section>
-
+    <section id="random" class="random-beer-sec">
+        <div class="container">
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-4 offset-md-2 beer_info" id="photo_div">
+                    <div class="beer_text" id="photo">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Beer name</h4>
+                    <p id="beer_name">
+                    </p>
+                    <h4>Beer ABV</h4>
+                    <p id="beer_abv">
+                    </p>
+                    <h4>Beer IBU</h4>
+                    <p id="beer_ibu">
+                    </p>
+                    <h4>Beer color</h4>
+                    <p id="beer_color">
+                    </p>
+                    <h4>Beer Description</h4>
+                    <p id="beer_description">
+                    </p>
+                    <h4>Food Recommendation</h4>
+                    <p id="beer_food">
+                    </p>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div id="new_beer row">
+                <button id="new_beer" type="button" class="col-sm-2 offset-md-5 btn btn-primary">Pour me another!</button>
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </section>
     <!-- Beer information -->
 
     <section class="random-beer-sec"></section>
@@ -95,7 +130,6 @@
     <div class="container">
         <h2>Random beer joke generator</h2>
         <blockquote class="text-center my-5">
-            <!--Still have to make this blockquote put quotation marks around text-->
             <p id="fact">Steven Petrosino of New Cumberland, Pennsylvania downed 1 liter of beer or 33 ounces in a chilly 1.3 seconds in 1977 which made him a World Beer Chugging Champion according to the Guinness Book of World Records. </p>
         </blockquote>
         <div class="text-center">
@@ -106,14 +140,13 @@
     <!-- Team -->
     <span id="team-panel" class="anchor"></span>
     <div id="team">
-          <h2 class="py-5">Team</h2>
-          <p class="text-center my-5">This website is the result of 8 weeks of an intense website development bootcamp given by the Turing Society at the University of Amsterdam. During these weeks we learned the basics of HTML, CSS, jQuery, APIs and
-            frameworks such as Bootstrap. So please! Have a look around, learn cool new facts about some of the best specialty beers in the World, generate random beer jokes and get to know our team.</p>
+        <h2 class="py-5">Team</h2>
+        <p class="text-center my-5">This website is the result of 8 weeks of an intense website development bootcamp given by the Turing Society at the University of Amsterdam. During these weeks we learned the basics of HTML, CSS, jQuery, APIs and frameworks such as Bootstrap. So please! Have a look around, learn cool new facts about some of the best specialty beers in the World, generate random beer jokes and get to know our team.</p>
         <div class="imagecontainer">
-          <img src="img\summer.jpg" alt="profile" class="rounded-circle" id="teampics">
-          <img src="img\summer.jpg" alt="profile" class="rounded-circle" id="teampics">
-          <img src="img\summer.jpg" alt="profile" class="rounded-circle" id="teampics">
-          <img src="img\summer.jpg" alt="profile" class="rounded-circle" id="teampics">
+            <img src="img\summer.jpg" alt="profile" class="rounded-circle" id="teampics">
+            <img src="img\summer.jpg" alt="profile" class="rounded-circle" id="teampics">
+            <img src="img\summer.jpg" alt="profile" class="rounded-circle" id="teampics">
+            <img src="img\summer.jpg" alt="profile" class="rounded-circle" id="teampics">
         </div>
     </div>
 
@@ -124,15 +157,17 @@
 
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <!-- MAKE SURE WE IMPORT THE NON SLIM VERSION - NEED IT FOR BEER FACT GENERATOR -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+
+    <!-- OTHER SCRIPTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    
-
+    <!-- Typed.js link -->
+    <script src="typed.js" type="text/javascript"></script>
 
 
 </body>

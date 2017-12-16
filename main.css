@@ -29,8 +29,14 @@ h2{
     margin-top: 30px;
 }
 
+/*
 div{
     min-height: 100px;
+}
+*/
+.spacer {
+    height: 5px;
+    margin-bottom: 5%;
 }
 
 .over-layer{
@@ -110,7 +116,37 @@ ul li a:hover,ul li a:active,ul li a:focus{
 /* RANDOM BEER SECTION */
 .random-beer-sec{
     background-color: #fff;
-    min-height: 600px;
+    height: 400px;
+    text-align: left;
+
+}
+
+.random-beer-sec h4,.random-beer-sec p{
+    color: #000000;
+    text-align: left;
+}
+
+.beer_info{
+  display: inline-block;
+  max-width: 400px;
+  vertical-align: top;
+}
+
+#photo img{
+  height: 600px;
+  width: auto;
+}
+
+#beer_color{
+    border-color: #fff;
+    border-width: 2px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    height: 60px;
+    width: 200px;
 }
 
 /* ABOUT */
@@ -131,13 +167,7 @@ ul li a:hover,ul li a:active,ul li a:focus{
     background-size: cover;
 }
 
-/* FOOTER */
-
-footer{
-    background-color: #212121;
-    height: 100px;
-    width: 100%;
-}
+/* TEAM */
 
 .imagecontainer{
   text-align: center;
@@ -148,3 +178,11 @@ footer{
   width: 150px;
   margin: 35px;
 }
+/* FOOTER */
+
+footer{
+    background-color: #212121;
+    height: 100px;
+    width: 100%;
+}
+
