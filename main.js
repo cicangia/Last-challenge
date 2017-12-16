@@ -13,7 +13,7 @@ $(document).ready(function () {
                 "background-color": "rgba(0,0,0,0.8)",
                 "height": "60px"
             });
-<<<<<<< HEAD
+
         } else {
             $(".background-color").css({
                 "background-color": "transparent",
@@ -34,9 +34,9 @@ $(document).ready(function () {
 //        }, 1000);
 //    });
 });
-=======
- });
 
+
+//  BEER JOKE / FACT GENERATOR
  $(document).ready(function() {
 
    $.getJSON("facts.json", function(json){
@@ -53,4 +53,3 @@ $(document).ready(function () {
     });
   });
 });
->>>>>>> 32f981eba7cf74af32e7013dd9e9de907b73c60a
