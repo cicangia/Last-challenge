@@ -13,7 +13,9 @@ h1,h2,h3,h4,h5,h6,p,li{
     color: #ffffff;
 }
 
-
+p{
+    font-size: 16px;
+}
 
 @font-face{
     font-family:Betty;
@@ -66,6 +68,7 @@ div{
     width: 100%;
     position: fixed;
     z-index: 100000;
+    height: 100px;
 }
 
 ul li{
@@ -206,5 +209,16 @@ footer{
     background-color: #212121;
     height: 100px;
     width: 100%;
+}
+
+@media (min-width: 768px){
+    
+    
+}
+@media (max-width: 768px){
+    p{
+        font-size: 18px !important;
+    }
+    
 }
 

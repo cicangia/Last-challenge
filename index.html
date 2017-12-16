@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Pour me another</title>
-    <meta charset="utf-8">
-
-    <!-- Bootstrap import -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-    <!-- Main css -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Starter Template for Bootstrap 3.3.7</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <style>body{padding-top:50px;}.starter-template{padding:40px 15px;text-align:center;}</style>
+    
+        <!-- Main css -->
     <link rel="stylesheet" type="text/css" href="main.css">
 
     <!-- Google font link -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
 
+
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
 
     <!-- Navigation -->
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
 
+            <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">home </a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#random-panel">random beer</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-panel">about</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#facts-panel">fun facts</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#team-panel">team</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#contacts-panel">contacts</a>
+                </li>
+            </ul>
+            </div><!--.nav-collapse -->
+        </div>
+    </nav>
+
+<!--
     <nav class="navbar sticky-top navbar-expand-lg  background-color">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -52,6 +101,7 @@
             </ul>
         </div>
     </nav>
+-->
     <!-- The introduction section -->
     <div class="back-img">
 
@@ -70,12 +120,12 @@
     <section id="random" class="random-beer-sec">
         <div class="container">
             <div class="spacer"></div>
-            <div class="row">
-                <div class="col-md-4 offset-md-2 beer_info" id="photo_div">
+            <div class="row container">
+                <div class="col-md-4 col-sm-4  col-md-offset-2 beer_info" id="photo_div">
                     <div class="beer_text" id="photo">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6">
                     <h4>Beer name</h4>
                     <p id="beer_name">
                     </p>
@@ -97,8 +147,8 @@
                 </div>
             </div>
             <div class="spacer"></div>
-            <div class="row">
-                <button id="new_beer" type="button" class="col-sm-2 offset-md-5 btn btn-primary">Pour me another!</button>
+            <div class="row container">
+                <button id="new_beer" type="button" class="col-sm-2 col-sm-offset-5 btn btn-primary">Pour me another!</button>
             </div>
         </div>
     </section>
@@ -106,12 +156,12 @@
     <!-- General beer information (WIKI) -->
     <span id="about-panel" class="anchor"></span>
     <section id="about" class="row">
-        <div class="col-sm-6 box">
+        <div class="col-sm-12 col-md-12 col-lg-6 box">
             <h3>About our Beers</h3>
             <p class="about-text">Beer is the oldest and most widely consumed alcoholic drink in the world, and the third most popular drink overall after water and tea. Beer is brewed from cereal grains — most commonly from malted barley, though wheat, maize (corn), and rice are also used. During the brewing process, fermentation of the starch sugars in the wort produces ethanol and carbonation in the resulting beer. Most modern beer is brewed with hops, which add bitterness and other flavours and act as a natural preservative and stabilizing agent.</p>
         </div>
-        <div class="col-sm-6">
-            <img src="img/hops-barley.jpg" alt="">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+            <img src="img/hops-barley.jpg" style="width: 100%;" alt="">
         </div>
     </section>
 
@@ -140,12 +190,12 @@
     <span id="team-panel" class="anchor"></span>
     <div id="team">
         <h2 class="py-5">Team</h2>
-        <p class="text-center my-5">This website is the result of 8 weeks of an intense website development bootcamp given by the Turing Society at the University of Amsterdam. During these weeks we learned the basics of HTML, CSS, jQuery, APIs and frameworks such as Bootstrap. So please! Have a look around, learn cool new facts about some of the best specialty beers in the World, generate random beer jokes and get to know our team.</p>
+        <p class="text-center my-5 col-sm-12">This website is the result of 8 weeks of an intense website development bootcamp given by the Turing Society at the University of Amsterdam. During these weeks we learned the basics of HTML, CSS, jQuery, APIs and frameworks such as Bootstrap. So please! Have a look around, learn cool new facts about some of the best specialty beers in the World, generate random beer jokes and get to know our team.</p>
         <div class="imagecontainer">
-            <img src="img/summer.jpg" alt="profile" class="rounded-circle teampics">
-            <img src="img/summer.jpg" alt="profile" class="rounded-circle teampics">
-            <img src="img/summer.jpg" alt="profile" class="rounded-circle teampics">
-            <img src="img/summer.jpg" alt="profile" class="rounded-circle teampics">
+            <img src="img/summer.jpg" alt="profile" class="img-circle teampics">
+            <img src="img/summer.jpg" alt="profile" class="img-circle teampics">
+            <img src="img/summer.jpg" alt="profile" class="img-circle teampics">
+            <img src="img/summer.jpg" alt="profile" class="img-circle teampics">
         </div>
     </div>
 
@@ -155,20 +205,16 @@
     <footer id="contacts">
 
     </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <!-- MAKE SURE WE IMPORT THE NON SLIM VERSION - NEED IT FOR BEER FACT GENERATOR -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-    </script>
-
-    <!-- OTHER SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <!-- OTHER SCRIPTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <!-- Typed.js link -->
     <script src="typed.js"></script>
 
-
 </body>
-
 </html>
