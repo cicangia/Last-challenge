@@ -11,13 +11,13 @@ $(document).ready(function () {
         if (scroll > 130) {
             $(".background-color").css({
                 "background-color": "rgba(0,0,0,0.8)",
-                "height": "60px"
+                "padding": "0px"
             });
 
         } else {
             $(".background-color").css({
                 "background-color": "transparent",
-                "height": "108px"
+                "padding": "40px"
             });
         }
     });
