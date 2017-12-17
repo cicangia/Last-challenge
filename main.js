@@ -1,6 +1,9 @@
 
 $(document).ready(function () {
 
+
+    $('div.hidden').fadeIn(2500).removeClass('hidden');
+
     var scroll = 0;
     $(document).scroll(function () {
         scroll = $(this).scrollTop();
