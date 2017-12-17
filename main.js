@@ -40,6 +40,12 @@ $(document).ready(function () {
     $(this).attr('src', "img/julianformal.jpg");
     });
 
+    $('#picturebob').hover(function(){
+    $(this).attr('src', "img/bobbeer.jpg");
+    }, function(){
+    $(this).attr('src', "img/bobformal.jpg");
+    });
+
 
 });
 // random beer generater
