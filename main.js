@@ -1,6 +1,3 @@
-// var typed = new Typed('#typed', {
-//   stringsElement: '#typed-strings'
-// });
 
 $(document).ready(function () {
 
@@ -30,10 +27,22 @@ $(document).ready(function () {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 1000);
     });
-    
-    
+
+    $('#picturewiebe').hover(function(){
+    $(this).attr('src', "img/profile.jpg");
+    }, function(){
+    $(this).attr('src', "img/summer.jpg");
+    });
+
+    $('#picturejulian').hover(function(){
+    $(this).attr('src', "img/julianbeer.jpg");
+    }, function(){
+    $(this).attr('src', "img/julianformal.jpg");
+    });
+
+
 });
-// randem beer generater
+// random beer generater
 $(document).ready(function () {
         $.ajax({url: "https://api.punkapi.com/v2/beers/random",
           success: function (result) {

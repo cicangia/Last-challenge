@@ -237,7 +237,10 @@ ul li {
     text-align: center;
 }
 
-.teampics {
+#picturewiebe,
+#picturebob,
+#pictureciro,
+#picturejulian {
     display: inline-block;
     width: 150px;
     margin: 35px;
@@ -353,7 +356,7 @@ footer {
     .sep {
         display: none !important;
     }
-    
+
     .contact-text {
         margin-left: 100px;
         margin-bottom: 60px;
