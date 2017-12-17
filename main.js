@@ -32,9 +32,9 @@ $(document).ready(function () {
     });
 
     $('#picturewiebe').hover(function(){
-    $(this).attr('src', "img/profile.jpg");
+    $(this).attr('src', "img/wiebebeer.jpg");
     }, function(){
-    $(this).attr('src', "img/summer.jpg");
+    $(this).attr('src', "img/profile.jpg");
     });
 
     $('#picturejulian').hover(function(){
