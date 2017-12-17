@@ -33,9 +33,50 @@
     <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target="#navbar">
 
     <!-- Navigation -->
+
+    <nav class="navbar background-color navbar-dark navbar-fixed-top desktop-nav">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">home </a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#random">random beer</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-panel">about</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#facts-panel">fun facts</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#team-panel">team</a>
+                </li>
+                <li class="nav-item sep">|</li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#contacts-panel">contacts</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--
     <nav class="navbar desktop-nav navbar-fixed-top navbar-dark background-color">
         <div class="container">
             <div class="navbar-header">
@@ -74,11 +115,13 @@
                     </li>
                 </ul>
             </div>
-            <!--            .nav-collapse -->
+                        .nav-collapse 
         </div>
     </nav>
+-->
 
     <!--  MOBILE NAVIGATION  -->
+    
     <nav class="navbar transparent mobile-nav navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -112,9 +155,9 @@
                     </li>
                 </ul>
             </div>
-            <!--.nav-collapse -->
         </div>
     </nav>
+
 
     <div class="main-container">
         <!-- The introduction section -->
@@ -171,12 +214,13 @@
         <!-- General beer information (WIKI) -->
         <span id="about-panel" class="anchor"></span>
         <section id="about" class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6 box">
+            <div class="col-sm-12 col-md-6 box">
                 <h3>About our Beers</h3>
                 <p class="about-text">Beer is the oldest and most widely consumed alcoholic drink in the world, and the third most popular drink overall after water and tea. Beer is brewed from cereal grains — most commonly from malted barley, though wheat, maize (corn), and rice are also used. During the brewing process, fermentation of the starch sugars in the wort produces ethanol and carbonation in the resulting beer. Most modern beer is brewed with hops, which add bitterness and other flavours and act as a natural preservative and stabilizing agent.</p>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-6">
-                <img src="img/hops-barley.jpg" style="width: 100%;" alt="">
+            <div class="col-sm-12 col-md-6 ">
+                <img class="barley-img-square" src="img/hops-barley2.jpg" style="width: 100%;" alt="">
+                <img class="barley-img" src="img/hops-barley.jpg" style="width: 100%;" alt="">
             </div>
         </section>
 

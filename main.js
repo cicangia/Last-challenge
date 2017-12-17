@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
 
     $('body').scrollspy({
-        target: '.navbar'
+        target: '#navbar'
     });
 
     $(document).on('click', 'a[href^="#"]', function (event) {
