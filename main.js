@@ -49,6 +49,12 @@ $(document).ready(function () {
     $(this).attr('src', "img/bobformal.jpg");
     });
 
+    $('#pictureciro').hover(function(){
+    $(this).attr('src', "img/ciroinformal.jpg");
+    }, function(){
+    $(this).attr('src', "img/ciroformal.jpg");
+    });
+
 
 });
 // random beer generater
